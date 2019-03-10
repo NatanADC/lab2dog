@@ -40,6 +40,7 @@ code {
 	color: #FFFFFF;
 	border-color: #000000;
 	text-shadow: 4px 0 0 #000, -4px 0 0 #000, 0 4px 0 #000, 0 -4px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+	text-transform: uppercase;
 }
 
 .top{
