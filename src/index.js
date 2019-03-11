@@ -18,6 +18,7 @@ class DogeMeme extends React.Component{
 
       this.updateState2 = this.updateState2.bind(this);
 
+      this.updateMessage = this.updateMessage.bind(this);
 
 
    };
@@ -29,6 +30,12 @@ class DogeMeme extends React.Component{
    		this.setState({bottom: c.target.value});
    }
 
+   updateMessage() {
+        this.setState({
+    	top: 'Top',
+         bottom: 'Bottom'});
+    }
+
    render() {
       return (
          <div >
@@ -37,6 +44,8 @@ class DogeMeme extends React.Component{
                onChange = {this.updateState} />
             <input type = "text" value = {this.state.bottom}
             	onChange = {this.updateState2} />
+
+            	<button onClick={this.updateMessage}>RESET</button>
          	</div>
           
 
